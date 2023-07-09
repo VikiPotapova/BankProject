@@ -21,6 +21,7 @@ Project is created with JAVA SE 19.
 ## Setup
 
 To run this project, install it: https://github.com/VikiPotapova/BankProject/tree/master
+
 The program will wait for the information to be entered from the console (number of operation):
 * number 1 means – call the operation of parsing files with transfers
 * number 2 means – show the list of all transfers.

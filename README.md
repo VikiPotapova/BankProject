@@ -3,16 +3,16 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-*[FAQ](#FAQ)
+* [FAQ](#FAQ)
 
 
 ## General info
 
 This is project for bank. It helps to:
-*read the files and choose proper ones
-*track the money transfers
-*prevent wrong situations
-*update account balance information
+* read the files and choose proper ones
+* track the money transfers
+* prevent wrong situations
+* update account balance information
 	
 ## Technologies
 
@@ -22,8 +22,8 @@ Project is created with JAVA SE 19.
 
 To run this project, install it:
 The program will wait for the information to be entered from the console (number of operation):
-*number 1 means - call the operation of parsing files with transfers
-*number 2 means – show the list of all transfers.
+* number 1 means - call the operation of parsing files with transfers
+* number 2 means – show the list of all transfers.
 
 ## FAQ
 

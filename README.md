@@ -34,7 +34,7 @@ After downloading it add files to right packages. Pay attention that there are c
 
 ### 2. How to be sure that the file with transfers goes once and return correct sum?
 
-There is a method that moveS parsed files to the archive. So they can be used only one time.
+There is a method that moves parsed files to the archive. So they can be used only one time.
 
 ### 3. What happened in case of wrong format or empty files?
 

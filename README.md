@@ -17,6 +17,11 @@ This is project for bank. It helps to:
 ## Technologies
 
 Project is created with JAVA SE 19.
+
+
+Diagram of classes:
+![DiagramClasses](https://github.com/VikiPotapova/BankProject/assets/132469294/2caa145e-9f83-4f4d-9a47-a771ba6ae2f6)
+
 	
 ## Setup
 

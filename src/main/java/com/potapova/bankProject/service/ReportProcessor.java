@@ -11,7 +11,7 @@ import java.util.Objects;
 
 public class ReportProcessor {
     public void writeReport(File fileForWrite, File catalog, List<File> listTxt) {
-        try (FileWriter fileWriterReport = new FileWriter(fileForWrite)) {
+        try (FileWriter fileWriterReport = new FileWriter(fileForWrite, true)) {
             for (File f : Objects.requireNonNull(catalog.listFiles())) {
                 fileWriterReport.write(LocalDateTime.now() + " | " + f.getName() + " | " + CatalogAnalyser.resultCatalogParsingTest(f, listTxt) + "\n");
                 fileWriterReport.flush();

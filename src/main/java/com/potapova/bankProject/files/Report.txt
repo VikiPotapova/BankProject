@@ -1,7 +1,0 @@
-2023-07-10T15:19:09.190004 | Transfers.txt | Success
-2023-07-10T15:19:09.205622500 | Transfers_1.txt | Success
-2023-07-10T15:19:09.205622500 | Transfers_2.txt | Success
-2023-07-10T15:19:09.205622500 | Transfers_3.txt | Success
-2023-07-10T15:19:09.205622500 | Transfers_4.txt | Success
-2023-07-10T15:19:09.205622500 | Transfers_5.txt | Success
-2023-07-10T15:19:09.205622500 | Transfers_6.docx | Unsuccessfully

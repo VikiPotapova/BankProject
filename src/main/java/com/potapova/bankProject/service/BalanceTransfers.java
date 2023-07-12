@@ -15,7 +15,7 @@ public class BalanceTransfers {
         try (BufferedReader bufferedFileReaderBalance = new BufferedReader(new FileReader(file))){
             String line;
             while ((line = bufferedFileReaderBalance.readLine()) != null) {
-                if (line.matches("\\d{5}\\-\\d{5}\\s+\\d+")) {
+                if (line.matches("\\d{5}-\\d{5}\\s+-?\\d+")) {
                     String[] array = line.split("\\s+");
                     accountBalanceMap.put( array[0], Integer.parseInt(array[1]));
                 }
@@ -31,9 +31,9 @@ public class BalanceTransfers {
             try (BufferedReader bufferedFileReaderTransfers = new BufferedReader(new FileReader(f))) {
                 String line1;
                 while ((line1 = bufferedFileReaderTransfers.readLine()) != null) {
-                    if (line1.matches("\\d{5}\\-\\d{5}\\|\\d{5}\\-\\d{5}\\|\\d+")) {
+                    if (line1.matches("\\d{5}-\\d{5}\\|\\d{5}-\\d{5}\\|\\d+")) {
                         String[] array1 = line1.split("\\|");
-                        if (map.get(array1[0]) > map.get(array1[1])) {
+                        if (map.get(array1[0]) > Integer.parseInt(array1[2])) {
                             map.put(array1[0], map.get(array1[0]) - Integer.parseInt(array1[2]));
                             map.put(array1[1], map.get(array1[1]) + Integer.parseInt(array1[2]));
                         }

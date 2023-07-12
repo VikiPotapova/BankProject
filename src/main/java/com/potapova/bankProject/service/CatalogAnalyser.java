@@ -6,18 +6,15 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class CatalogAnalyser {
     public List<File> getFiles(File f) {
-        List<File> filesList = new ArrayList<>();
-        if (f.isDirectory()) {
-            File file = new File(String.valueOf(f));
-            File[] arrayOfFiles = file.listFiles();
-            if (arrayOfFiles != null) {
-                filesList = Arrays.asList(arrayOfFiles);
-            } else {
-                throw new EmptyDirectoryException("The file is empty");
-            }
+        List<File> filesList;
+        if ((f.isDirectory()) && (f.list().length > 0)) {
+            filesList = Arrays.asList(f.listFiles());
+        } else {
+            throw new EmptyDirectoryException("The file is empty");
         }
         return getTxtFiles(filesList);
     }
